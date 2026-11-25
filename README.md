@@ -41,29 +41,8 @@ The framework uses simulated logistics scenarios to demonstrate and evaluate its
 
 The system follows a modular architecture in which the web interface communicates with a Python backend. The backend processes shipment information through seven interconnected modules and returns the results to the user.
 
-mermaid
-flowchart TD
-    A[User] --> B[Web Interface]
-    B --> C[Python HTTP Server]
-    C --> D[JSON Serialization]
+<img width="3678" height="2184" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/6375e6bd-432f-42fe-bbe5-7c12637906cc" />
 
-    D --> E[Evidence Collection]
-    E --> F[Evidence Credibility Assessment]
-    F --> G[Damage Localization]
-    G --> H[Competing-Cause Evaluation]
-    H --> I[Custody Mapping]
-    I --> J[Evidence-Based Assessment]
-
-    E --> K[Evidence Preservation]
-    J --> K
-
-    K --> L[Pipeline Results]
-    L --> M[JSON Response]
-    M --> B
-
-    N[Simulated Scenarios] --> E
-    O[Evaluation Script] --> E
-    O --> P[Performance Metrics]
 
 
 ### 2.2 Module Description
