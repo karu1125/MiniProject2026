@@ -1,6 +1,4 @@
 # Context-Aware Framework for Logistic Incident Reconstruction
-An evidence-driven framework for cargo damage detection, localization, and incident reconstruction across multi-stage logistics.
-
 
 ## 1. Purpose
 
