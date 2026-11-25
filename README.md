@@ -41,7 +41,8 @@ The framework uses simulated logistics scenarios to demonstrate and evaluate its
 
 The system follows a modular architecture in which the web interface communicates with a Python backend. The backend processes shipment information through seven interconnected modules and returns the results to the user.
 
-<img width="3678" height="2184" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/6375e6bd-432f-42fe-bbe5-7c12637906cc" />
+<img width="1440" height="2496" alt="architecture_diagram_ssw_style" src="https://github.com/user-attachments/assets/1773b46d-5a89-4b7e-ac73-f04e8a600fbc" />
+
 
 
 
