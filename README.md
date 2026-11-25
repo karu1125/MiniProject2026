@@ -106,6 +106,13 @@ The processing modules are:
 | Web server | `app.py` | Serves the interface and JSON endpoints |
 | Web interface | `web/index.html` | Provides scenario selection, customization, and result visualization |
 
+
+
+<img width="1440" height="2496" alt="architecture_diagram_ssw_style" src="https://github.com/user-attachments/assets/e8db00a2-8f34-4ae2-9977-42af95d2a51f" />
+
+
+
+
 ### High-level pipeline
 
 1. Evidence records are represented using `EvidenceItem` objects.
@@ -129,17 +136,13 @@ This section documents the behavior present in the current source code. It shoul
 
 For each evidence item \(i\), the prototype calculates:
 
-\[
-Q_i = \alpha C_i + \beta R_i + \gamma T_i + \delta F_i
-\]
+
+<img width="331" height="33" alt="image" src="https://github.com/user-attachments/assets/55fb849d-176a-466b-a4e2-90d33a8ab833" />
+
 
 Where:
 
-- \(C_i\): consistency indicator.
-- \(R_i\): source-reliability indicator.
-- \(T_i\): temporal-quality indicator.
-- \(F_i\): corroboration indicator.
-- \(\alpha,\beta,\gamma,\delta\): configured weights.
+<img width="467" height="212" alt="image" src="https://github.com/user-attachments/assets/631b3410-763d-4044-a9cd-50118c5f1cf5" />
 
 The default weights are all `0.25`. The weights must sum to `1.0`. The resulting score is bounded to the interval \([0,1]\).
 
